@@ -3,18 +3,19 @@ import SectionReveal from "../components/SectionReveal";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 
-const FILTERS = ["All", "Featured", "AI", "Full Stack"];
+const FILTERS = ["All", "Featured", "AI Powered", "Full Stack"];
 
 const matchesFilter = (project, filter) => {
   if (filter === "All") return true;
   if (filter === "Featured") return !!project.featured;
-  if (filter === "AI")
-    return project.techStack.some((t) => /gemini|ai|claude/i.test(t));
-  if (filter === "Full Stack")
-    return (
-      project.techStack.some((t) => /react|next/i.test(t)) &&
-      project.techStack.some((t) => /node|express|spring|java/i.test(t))
-    );
+  if (filter === "AI Powered") return !!project.ai;
+
+  // return project.techStack.some((t) => /gemini|ai|claude/i.test(t));
+  if (filter === "Full Stack") return !!project.fullstack;
+  // return (
+  //   project.techStack.some((t) => /react|next/i.test(t)) &&
+  //   project.techStack.some((t) => /node|express|spring|java/i.test(t))
+  // );
   return true;
 };
 
@@ -22,14 +23,16 @@ const Projects = () => {
   const [filter, setFilter] = useState("All");
   const filtered = useMemo(
     () => projects.filter((p) => matchesFilter(p, filter)),
-    [filter]
+    [filter],
   );
 
   return (
     <section id="projects" className="relative py-28 md:py-36 px-6 md:px-10">
       <div className="max-w-6xl mx-auto">
         <SectionReveal>
-          <p className="font-mono text-xs text-signal mb-3">$ git log --projects</p>
+          <p className="font-mono text-xs text-signal mb-3">
+            $ git log --projects
+          </p>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
             <h2 className="font-display text-3xl md:text-4xl text-paper">
               Things I've shipped.

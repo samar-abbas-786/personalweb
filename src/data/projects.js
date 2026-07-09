@@ -32,6 +32,8 @@ export const projects = [
     ],
     accent: "signal",
     featured: true,
+    fullstack:true,
+    ai:true,
   },
   {
     id: 2,
@@ -51,6 +53,7 @@ export const projects = [
     ],
     accent: "copper",
     featured: true,
+     fullstack:true,
   },
   {
     id: 3,
@@ -71,6 +74,8 @@ export const projects = [
     ],
     accent: "signal",
     featured: true,
+     fullstack:true,
+     ai:true,
   },
   {
     id: 4,
@@ -89,6 +94,8 @@ export const projects = [
       "Gemini API",
     ],
     accent: "copper",
+     fullstack:true,
+     ai:true,
   },
   {
     id: 5,
@@ -106,6 +113,7 @@ export const projects = [
       "Manifest V3",
     ],
     accent: "signal",
+    ai:true,
   },
   {
     id: 6,
@@ -136,6 +144,7 @@ export const projects = [
     code: "https://github.com/samar-abbas-786/Minor_Project",
     techStack: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
     accent: "signal",
+     fullstack:true,
   },
   {
     id: 8,
@@ -147,6 +156,7 @@ export const projects = [
     code: "https://github.com/samar-abbas-786/Artify",
     techStack: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS"],
     accent: "copper",
+     fullstack:true,
   },
   {
     id: 9,
@@ -158,6 +168,7 @@ export const projects = [
     code: "https://github.com/samar-abbas-786/Campus-Bazaar",
     techStack: ["Node.js", "Express", "MongoDB Cluster", "EJS", "CSS"],
     accent: "signal",
+     fullstack:true,
   },
   {
     id: 10,
@@ -177,6 +188,7 @@ export const projects = [
       "Kaggle",
     ],
     accent: "copper",
+     fullstack:true,
   },
   {
     id: 11,
@@ -188,6 +200,7 @@ export const projects = [
     code: "https://github.com/samar-abbas-786/Event-Scheduler",
     techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     accent: "signal",
+
   },
   {
     id: 12,
@@ -205,5 +218,6 @@ export const projects = [
       "Tailwind CSS",
     ],
     accent: "copper",
+     fullstack:true,
   },
 ];

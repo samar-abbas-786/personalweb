@@ -22,7 +22,7 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Software Development Intern",
+    title: "CS and IT Associate",
     company: "Confidence Connector, Innovative Engineering Solutions",
     duration: "July 2025 – October 2025",
     location: "Aligarh",
