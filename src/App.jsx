@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -56,6 +56,7 @@ function App() {
           </>
         )}
       </ScrollProvider>
+      <Analytics />
     </HelmetProvider>
   );
 }
