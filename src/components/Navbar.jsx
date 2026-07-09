@@ -24,9 +24,18 @@ const Navbar = () => {
 
   const handleClick = (href) => {
     setOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-  };
 
+    setTimeout(() => {
+      const element = document.querySelector(href);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 150); // same as AnimatePresence duration
+  };
   return (
     <>
       <motion.header

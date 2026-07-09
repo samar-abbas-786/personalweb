@@ -51,7 +51,8 @@ body {
 }
 
 .bg-grid-pattern {
-  background-image: linear-gradient(to right, #1a2030 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, #1a2030 1px, transparent 1px),
     linear-gradient(to bottom, #1a2030 1px, transparent 1px);
   background-size: 44px 44px;
 }
@@ -72,4 +73,18 @@ body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+}
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Internet Explorer & old Edge */
+body {
+  -ms-overflow-style: none;
 }

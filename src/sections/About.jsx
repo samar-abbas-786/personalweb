@@ -4,10 +4,10 @@ import SectionReveal from "../components/SectionReveal";
 import { personal } from "../data/socials";
 
 const STATS = [
-  { value: "12+", label: "Projects shipped" },
+  { value: "15+", label: "Projects shipped" },
   { value: "280+", label: "DSA Problems Solved" },
   { value: "4", label: "internships" },
-  { value: "20+", label: "Tools in the stack" },
+  // { value: "20+", label: "Tools in the stack" },
 ];
 
 const About = () => {

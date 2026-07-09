@@ -50,7 +50,7 @@ export const personal = {
     "I design and build scalable backend services, intuitive full-stack applications, and intelligent AI-powered products using modern technologies and engineering best practices.",
   bio: [
     "I'm a Software Engineer passionate about building scalable backend systems and modern full-stack applications. I enjoy solving complex problems by designing clean, efficient, and maintainable software.",
-    "I have hands-on experience developing applications with Java, Spring Boot, React, REST APIs, microservices, MongoDB, and cloud technologies through professional internships and personal projects, always focusing on writing high-quality, production-ready code.",
+    "I have hands-on experience developing applications with Java, Spring Boot, ReactJs, NextJs, NodeJs, ExpressJs, REST APIs, microservices, MongoDB, and cloud technologies through professional internships and personal projects, always focusing on writing high-quality, production-ready code.",
     "I'm currently deepening my expertise in backend engineering, cloud-native development, and AI-powered applications, exploring technologies like RAG, Vector Databases, LLMs, and AWS to build intelligent software that delivers real-world impact.",
   ],
 };
