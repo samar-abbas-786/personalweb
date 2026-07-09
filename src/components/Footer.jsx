@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <p className="font-mono text-xs text-signal mb-2">$ echo $STATUS</p>
             <h3 className="font-display text-2xl md:text-3xl text-paper">
-              Open to backend & full-stack roles.
+              Open to frontend, backend & full-stack roles.
             </h3>
           </div>
           <MagneticButton
